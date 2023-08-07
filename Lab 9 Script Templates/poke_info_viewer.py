@@ -89,7 +89,7 @@ label_attack.grid(row = 1, column = 0, padx = (10, 5), pady = 5, sticky = E)
 bar_attack = ttk.Progressbar(frame_stats, length = PRG_BAR_LENGTH, maximum = STAT_MAX_VALUE)
 bar_attack.grid(row = 1, column = 1, padx = (0, 10), pady = 5)
 
-label_defense = ttk.Progressbar(frame_stats, text = "Defense:")
+label_defense = ttk.Label(frame_stats, text = "Defense:")
 label_defense.grid(row = 2, column = 0, padx = (10, 5), pady = 5, sticky = E)
 bar_defense = ttk.Progressbar(frame_stats, length = PRG_BAR_LENGTH, maximum = STAT_MAX_VALUE)
 bar_defense.grid(row = 2, column = 1, padx = (0, 10), pady = 5)
