@@ -15,7 +15,6 @@ from poke_api import get_pokemon_info
 root = Tk()
 root.title("Pokemon Information")
 root.resizable(False, False)
-#root.geometry('590x300')
 
 # Create the frames
 frame_input = ttk.Frame(root)
@@ -27,8 +26,8 @@ frame_info.grid(row = 1, column = 0, padx = (20, 10), pady = (10, 20), sticky = 
 frame_stats = ttk.LabelFrame(root, text = "Stats")
 frame_stats.grid(row = 1, column = 1, padx = (10, 20), pady = (10, 20), sticky = N)
 
-# Populate the user inpute frame with widgets
-Label_name = ttk.Entry(frame_input, text = "Pokemon Name:")
+# Populate the user input frame with widgets
+Label_name = ttk.Label(frame_input, text = "Pokemon Name:")
 Label_name.grid(row = 0, column = 0, padx = (10, 5), pady = 10)
 
 enter_name = ttk.Entry(frame_input)
