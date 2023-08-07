@@ -71,9 +71,9 @@ label_weight_val = ttk.Label(frame_info, width = 20)
 label_weight_val.grid(row = 1, column = 1,padx = (0, 10), pady = (10, 5), sticky = W)
 
 label_type = ttk.Label(frame_info, text = "Type:")
-# add code here
-# add code here
-# add code here
+label_type.grid(row = 2, column = 0, padx = (10, 5), pady = (10, 5), sticky = E)
+label_type_val = ttk.Label(frame_info, width = 20)
+label_type_val.grid(row = 2, column = 1, padx = (0, 10), pady = (10, 5), sticky = W)
 
 # Stats frame
 # Note: Max stat value is 255 for all stats
@@ -95,18 +95,18 @@ bar_defense = ttk.Progressbar(frame_stats, length = PRG_BAR_LENGTH, maximum = ST
 bar_defense.grid(row = 2, column = 1, padx = (0, 10), pady = 5)
 
 label_special_attack = ttk.Label(frame_stats, text = "Special Attack:")
-# add code here
-# add code here
-# add code here
+label_special_attack.grid(row = 3, column = 0, padx = (10, 5), pady = 5, sticky = E)
+bar_special_attack = ttk.Progressbar(frame_stats, length = PRG_BAR_LENGTH, maximum = STAT_MAX_VALUE)
+bar_special_attack.grid(row = 3, column = 1, padx = (0, 10), pady = 5)
 
-# add code here
-# add code here
+label_special_defense = ttk.Label(frame_stats, text = "Special Defense:")
+label_special_defense.grid(row = 4, column = 0, padx = (10, 5), pady = 5, sticky = E)
 bar_special_defense = ttk.Progressbar(frame_stats, length = PRG_BAR_LENGTH, maximum = STAT_MAX_VALUE)
 bar_special_defense.grid(row = 4, column = 1, padx = (0, 10), pady = 5)
 
 label_speed = ttk.Label(frame_stats, text = "Speed:")
-label_speed.grid(row = 5, column = 0, padx = (10, 5), pady = (5, 10), stick = E)
+label_speed.grid(row = 5, column = 0, padx = (10, 5), pady = 5, stick = E)
 bar_speed = ttk.Progressbar(frame_stats, length = PRG_BAR_LENGTH, maximum = STAT_MAX_VALUE)
-# add code here
+bar_speed.grid(row = 5, column = 1, padx = (0, 10), pady = 5)
 
 root.mainloop()
