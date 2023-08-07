@@ -67,8 +67,8 @@ label_height_val.grid(row = 0, column = 1, padx = (0, 10), pady = (10, 5), stick
 # Now populate the info frame with widgets here
 label_weight = ttk.Label(frame_info, text = 'Weight:')
 label_weight.grid(row = 1, column = 0, padx = (10, 5), pady = (10, 5), sticky = E)
-label_weight_volume = ttk.Label(frame_info, width = 20)
-label_weight_volume.grid(row = 1, column = 1,padx = (0, 10), pady = (10, 5), sticky = W)
+label_weight_val = ttk.Label(frame_info, width = 20)
+label_weight_val.grid(row = 1, column = 1,padx = (0, 10), pady = (10, 5), sticky = W)
 
 label_type = ttk.Label(frame_info, text = "Type:")
 # add code here
